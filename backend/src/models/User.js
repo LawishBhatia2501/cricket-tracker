@@ -40,6 +40,7 @@ const userSchema = new mongoose.Schema(
     googleId: {
       type: String,
       default: null,
+      unique: true,
       sparse: true,
     },
     emailOTP: {
@@ -69,9 +70,6 @@ const userSchema = new mongoose.Schema(
   },
   { timestamps: true },
 );
-
-// Index already created by unique:true on email above.
-userSchema.index({ googleId: 1 }, { unique: true, sparse: true });
 
 userSchema.pre("save", async function hashPassword(next) {
   if (!this.isModified("password")) return next();

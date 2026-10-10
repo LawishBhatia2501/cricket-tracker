@@ -8,8 +8,6 @@ dotenv.config();
 const connectDB = require("./config/db");
 const setupSockets = require("./sockets/matchSocket");
 
-connectDB();
-
 const app = express();
 app.use(helmet());
 const allowedOrigins = process.env.CLIENT_ORIGIN
@@ -87,6 +85,13 @@ io.on("connection", (socket) => {
 });
 
 const PORT = process.env.PORT || 5000;
-server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+connectDB()
+  .then(() => {
+    server.listen(PORT, () => {
+      console.log(`Server running on port ${PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.error("Server startup failed:", error.message);
+    process.exit(1);
+  });

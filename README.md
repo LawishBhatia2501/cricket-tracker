@@ -4,9 +4,8 @@
 
 <div align="center">
 
-**[Live App](https://bit.ly/crictrack)** &nbsp;·&nbsp; **[GitHub](https://github.com/Dev-06-06/cricket-tracker)**
+**[Live App](https://cricket-tracker-alpha.vercel.app/)** &nbsp;·&nbsp; **[GitHub](https://github.com/LawishBhatia2501/cricket-tracker)**
 
-![CricTrack Home](https://github.com/user-attachments/assets/33476494-e7fb-4978-9120-0d7812c6e85b)
 
 </div>
 
@@ -207,7 +206,7 @@ cricket-tracker/
 ### Clone
 
 ```bash
-git clone https://github.com/Dev-06-06/cricket-tracker.git
+git clone https://github.com/LawishBhatia2501/cricket-tracker.git
 cd cricket-tracker
 ```
 
@@ -370,6 +369,6 @@ npm run dev
 Built with React · Node.js · Socket.IO · MongoDB Atlas  
 Deployed on Render + Vercel
 
-**[Play a match →](https://bit.ly/crictrack)**
+**[Play a match →](https://cricket-tracker-rosy.vercel.app/)**
 
 </div>

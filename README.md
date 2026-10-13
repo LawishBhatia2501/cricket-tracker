@@ -88,7 +88,6 @@ CricTrack is the only scoring platform built around these realities.
 - **Bench a batter** mid-innings — retired not out, can return later
 - **Bench and replace** — swap a batter atomically in a single socket event
 - Undo last delivery with full state restoration including bench state
-- Over break flow — bowler selection between every over
 
 ### 🃏 Joker Player *(no other app does this)*
 - Designate one player to appear in **both teams** within a single match
